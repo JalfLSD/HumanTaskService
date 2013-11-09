@@ -1,0 +1,40 @@
+* Todas as aplicações
+http://127.0.0.1:5000/applications/
+
+* Uma aplicação
+http://127.0.0.1:5000/applications/8f38928f-4969-11e3-a8b8-c86000ca82e7
+
+* Tasks de uma aplicação
+http://127.0.0.1:5000/tasks/5a3410cf-4980-11e3-b767-c86000ca82e7
+
+* New task
+http://127.0.0.1:5000/tasks/newtask/1/5a3410cf-4980-11e3-b767-c86000ca82e7
+
+* Results de uma task
+http://127.0.0.1:5000/results/1
+
+*Dados POST
+
+- Add APP:
+{
+"ownerUserId": "1",
+"name": "App Name",
+"description": "App Description",
+"taskCopies": "2",
+"taskScheduler": "3"
+}
+
+-Task:
+{
+"applicationNumber": "5a3410cf-4980-11e3-b767-c86000ca82e7",
+"params": "23",
+"copies": "1"
+}
+
+-Task Result:
+{
+"userId": "1",
+"result": "bom!",
+"applicationNumber": "5a3410cf-4980-11e3-b767-c86000ca82e7",
+"taskId": "1"
+}
